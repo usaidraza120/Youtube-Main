@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YouTube</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    overflow-y:scroll;
+}
+
+/* Header */
+header{
+    height:60px;
+    display:flex;
+    align-items:center;
+    padding:10px 25px;
+    border-bottom:1px solid #ddd;
+}
+
+.menu{
+    font-size:25px;
+    margin-right:25px;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    width:220px;
+}
+
+.logo b{
+    background:red;
+    color:white;
+    padding:3px 7px;
+    border-radius:5px;
+}
+
+.search{
+    display:flex;
+    width:50%;
+    margin:auto;
+}
+
+.search input{
+    width:100%;
+    padding:9px;
+    border:1px solid #ccc;
+}
+
+.search button{
+    width:60px;
+    border:1px solid #ccc;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+    font-size:20px;
+}
+
+.profile{
+    background:#673ab7;
+    color:white;
+    padding:8px 12px;
+    border-radius:50%;
+}
+
+
+/* Left Menu */
+.sidebar{
+    position:fixed;
+    top:60px;
+    left:0;
+    width:225px;
+    height:100%;
+    border-right:1px solid #ddd;
+    background:white;
+}
+
+.item{
+    padding:14px 25px;
+    font-size:14px;
+}
+
+.item:hover{
+    background:#eee;
+}
+
+.active{
+    background:#ddd;
+    font-weight:bold;
+}
+
+hr{
+    border:0;
+    border-top:1px solid #ddd;
+    margin:10px 0;
+}
+
+
+/* Main */
+.main{
+    margin-left:225px;
+    padding:0 40px;
+}
+
+
+/* Categories */
+.categories{
+    display:flex;
+    gap:10px;
+    padding:12px 0;
+    border-bottom:1px solid #ddd;
+    overflow-x:auto;
+}
+
+.cat{
+    padding:8px 15px;
+    background:#f2f2f2;
+    border-radius:20px;
+    white-space:nowrap;
+    font-size:14px;
+}
+
+.cat:first-child{
+    background:#000;
+    color:white;
+}
+
+
+/* Videos */
+.videos{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px 18px;
+    padding-top:22px;
+}
+
+.video img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+
+.info{
+    padding-top:8px;
+}
+
+.title{
+    font-weight:bold;
+    font-size:14px;
+    line-height:20px;
+}
+
+.small{
+    font-size:13px;
+    color:#666;
+    margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<div class="menu">☰</div>
+
+<div class="logo">
+<b>▶</b> YouTube <sup>NG</sup>
+</div>
+
+<div class="search">
+<input type="text" placeholder="Search">
+<button>⌕</button>
+</div>
+
+<div class="icons">
+🎥　▦　🔔　<span class="profile">C</span>
+</div>
+
+</header>
+
+
+<!-- Left Sidebar -->
+<div class="sidebar">
+
+<div class="item active">🏠　Home</div>
+<div class="item">◉　Explore</div>
+<div class="item">▣　Subscriptions</div>
+
+<hr>
+
+<div class="item">▣　Library</div>
+<div class="item">◷　History</div>
+<div class="item">▷　Your videos</div>
+<div class="item">◷　Watch later</div>
+<div class="item">👍　Liked videos</div>
+
+<hr>
+
+<div class="item"><b>SUBSCRIPTIONS</b></div>
+
+<div class="item">♫　Music</div>
+<div class="item">🏆　Sports</div>
+<div class="item">🎮　Gaming</div>
+<div class="item">▤　News</div>
+
+</div>
+
+
+<!-- Main Content -->
+<main class="main">
+
+<div class="categories">
+
+<div class="cat">All</div>
+<div class="cat">Music</div>
+<div class="cat">Mixes</div>
+<div class="cat">User interface design</div>
+<div class="cat">Nollywood</div>
+<div class="cat">Logos</div>
+<div class="cat">Graphic design</div>
+<div class="cat">Website</div>
+<div class="cat">Computer Science</div>
+<div class="cat">Contemporary</div>
+
+</div>
+
+
+<!-- Videos -->
+<div class="videos">
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500">
+<div class="info">
+<div class="title">4-Year Medical Doctor (MD) Degree in UK</div>
+<div class="small">AUC School of Medicine<br>92K views • 5 months ago</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=500">
+<div class="info">
+<div class="title">UI Design Trends 2021</div>
+<div class="small">DesignSense<br>521K views • 5 months ago</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500">
+<div class="info">
+<div class="title">Simi - Complete Me | Official Video</div>
+<div class="small">X3M Music<br>3.7M views • 3 years ago</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500">
+<div class="info">
+<div class="title">Data Analyst Career Switch</div>
+<div class="small">The Work Life Man<br>56K views • 1 month ago</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500">
+<div class="info">
+<div class="title">STUBBORN BILLIONAIRES Complete</div>
+<div class="small">UGEZU News<br>4.3M views • 1 year ago</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500">
+<div class="info">
+<div class="title">Linda Osifo and Olakira</div>
+<div class="small">Ndani TV<br>13:04</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=500">
+<div class="info">
+<div class="title">Designing a Complete Brand Identity</div>
+<div class="small">Sydney Miller<br>1:56:50</div>
+</div>
+</div>
+
+
+<div class="video">
+<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500">
+<div class="info">
+<div class="title">7 Mistakes Ladies Make</div>
+<div class="small">Kingsley Okonkwo<br>17:36</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+</body>
+</html>
